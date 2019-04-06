@@ -50,7 +50,7 @@ namespace _17110094_NguyenAnh_Login
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            CreateControls();
         }
         private void ButtonRegister_Click(object sender, EventArgs e)
         {
@@ -86,6 +86,19 @@ namespace _17110094_NguyenAnh_Login
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+        }
+        void CreateControls()
+        {
+            ToolTip ToolTip1 = new ToolTip();
+            ToolTip1.IsBalloon = true;
+            ToolTip1.AutoPopDelay = 5000;
+            ToolTip1.InitialDelay = 600;
+
+            ToolTip1.ReshowDelay = 500;
+            ToolTip1.ToolTipIcon = ToolTipIcon.Info;
+            ToolTip1.ToolTipTitle = "Login";
+            ToolTip1.SetToolTip(this.txtUsername, "Nhap ky tu");
+            ToolTip1.SetToolTip(this.txtPassword, "Nhap ky tu");
         }
     }
 }

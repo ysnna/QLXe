@@ -45,13 +45,15 @@
             // 
             this.menu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menu.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuStudent,
             this.cOURSEToolStripMenuItem,
             this.sCOREToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(622, 27);
+            this.menu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menu.Size = new System.Drawing.Size(829, 31);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -65,14 +67,14 @@
             this.manageStudentFormToolStripMenuItem,
             this.printToolStripMenuItem});
             this.menuStudent.Name = "menuStudent";
-            this.menuStudent.Size = new System.Drawing.Size(88, 23);
+            this.menuStudent.Size = new System.Drawing.Size(108, 27);
             this.menuStudent.Text = "STUDENT";
             // 
             // menuAddNewStudent
             // 
             this.menuAddNewStudent.BackColor = System.Drawing.Color.LemonChiffon;
             this.menuAddNewStudent.Name = "menuAddNewStudent";
-            this.menuAddNewStudent.Size = new System.Drawing.Size(230, 24);
+            this.menuAddNewStudent.Size = new System.Drawing.Size(274, 28);
             this.menuAddNewStudent.Text = "Add New Student";
             this.menuAddNewStudent.Click += new System.EventHandler(this.menuAddNewStudent_Click);
             // 
@@ -80,7 +82,7 @@
             // 
             this.studentsListToolStripMenuItem.BackColor = System.Drawing.Color.LemonChiffon;
             this.studentsListToolStripMenuItem.Name = "studentsListToolStripMenuItem";
-            this.studentsListToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.studentsListToolStripMenuItem.Size = new System.Drawing.Size(274, 28);
             this.studentsListToolStripMenuItem.Text = "Students List";
             this.studentsListToolStripMenuItem.Click += new System.EventHandler(this.studentsListToolStripMenuItem_Click);
             // 
@@ -88,21 +90,22 @@
             // 
             this.staticsToolStripMenuItem.BackColor = System.Drawing.Color.LemonChiffon;
             this.staticsToolStripMenuItem.Name = "staticsToolStripMenuItem";
-            this.staticsToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.staticsToolStripMenuItem.Size = new System.Drawing.Size(274, 28);
             this.staticsToolStripMenuItem.Text = "Statics";
+            this.staticsToolStripMenuItem.Click += new System.EventHandler(this.staticsToolStripMenuItem_Click);
             // 
             // editRemoveToolStripMenuItem
             // 
             this.editRemoveToolStripMenuItem.BackColor = System.Drawing.Color.LemonChiffon;
             this.editRemoveToolStripMenuItem.Name = "editRemoveToolStripMenuItem";
-            this.editRemoveToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.editRemoveToolStripMenuItem.Size = new System.Drawing.Size(274, 28);
             this.editRemoveToolStripMenuItem.Text = "Edit / Remove";
             // 
             // manageStudentFormToolStripMenuItem
             // 
             this.manageStudentFormToolStripMenuItem.BackColor = System.Drawing.Color.LemonChiffon;
             this.manageStudentFormToolStripMenuItem.Name = "manageStudentFormToolStripMenuItem";
-            this.manageStudentFormToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.manageStudentFormToolStripMenuItem.Size = new System.Drawing.Size(274, 28);
             this.manageStudentFormToolStripMenuItem.Text = "Manage Student Form";
             this.manageStudentFormToolStripMenuItem.Click += new System.EventHandler(this.manageStudentFormToolStripMenuItem_Click);
             // 
@@ -110,29 +113,31 @@
             // 
             this.printToolStripMenuItem.BackColor = System.Drawing.Color.LemonChiffon;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(274, 28);
             this.printToolStripMenuItem.Text = "Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // cOURSEToolStripMenuItem
             // 
             this.cOURSEToolStripMenuItem.Name = "cOURSEToolStripMenuItem";
-            this.cOURSEToolStripMenuItem.Size = new System.Drawing.Size(77, 23);
+            this.cOURSEToolStripMenuItem.Size = new System.Drawing.Size(93, 27);
             this.cOURSEToolStripMenuItem.Text = "COURSE";
             // 
             // sCOREToolStripMenuItem
             // 
             this.sCOREToolStripMenuItem.Name = "sCOREToolStripMenuItem";
-            this.sCOREToolStripMenuItem.Size = new System.Drawing.Size(67, 23);
+            this.sCOREToolStripMenuItem.Size = new System.Drawing.Size(80, 27);
             this.sCOREToolStripMenuItem.Text = "SCORE";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 423);
+            this.ClientSize = new System.Drawing.Size(829, 521);
             this.Controls.Add(this.menu);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menu;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.menu.ResumeLayout(false);
