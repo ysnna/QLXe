@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LinQQLSV">
+  <DataContextMoniker Name="/LinQQLSVDataContext" />
+  <nestedChildShapes>
+    <classShape Id="38b0b690-0b7e-4ae4-8329-9ece2d5cd6b1" absoluteBounds="7.75, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LinQQLSVDataContext/Login" />
+      <nestedChildShapes>
+        <elementListCompartment Id="281bd7a5-a82b-4db8-a947-961483074783" absoluteBounds="7.7650000000000006, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a28b381-d1cb-4940-a214-6c15cc25ac2d" absoluteBounds="5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/LinQQLSVDataContext/SinhVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b3f5e3e-f688-4d73-bccc-cd3214c6c03b" absoluteBounds="5.015, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

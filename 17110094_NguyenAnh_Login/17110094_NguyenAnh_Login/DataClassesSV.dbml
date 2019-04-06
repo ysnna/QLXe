@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DESKTOP-RRRHOP4" Class="DataClassesSVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DESKTOP-RRRHOP4.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="_17110094_NguyenAnh_Login.Properties.Settings" SettingsPropertyName="DESKTOP_RRRHOP4ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SinhVien" Member="SinhVienns">
+    <Type Name="SinhVienn">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fName" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="lName" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="bdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="picture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>
