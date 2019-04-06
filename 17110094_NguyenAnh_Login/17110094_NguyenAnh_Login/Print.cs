@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Drawing.Printing;
 
 namespace _17110094_NguyenAnh_Login
 {
@@ -23,6 +23,8 @@ namespace _17110094_NguyenAnh_Login
         MY_DB mydb = new MY_DB();
         private void Print_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_DESKTOP_RRRHOP4DataSet3.Std' table. You can move, or remove it, as needed.
+            this.stdTableAdapter.Fill(this._DESKTOP_RRRHOP4DataSet3.Std);
             DateTimePic3.CustomFormat = "yyyy-dd-MM";
             DateTimePic3.Format = DateTimePickerFormat.Custom;
             DateTimePick4.CustomFormat = "yyyy-dd-MM";
@@ -41,14 +43,14 @@ namespace _17110094_NguyenAnh_Login
             DataGridView2.AllowUserToAddRows = false;
         }
 
-      
 
-       
+
+
 
         private void CheckBtn_Click(object sender, EventArgs e)
         {
-            
-            switch(NoRad.Checked==true)
+
+            switch (NoRad.Checked == true)
             {
                 case true:
                     {
@@ -161,28 +163,39 @@ namespace _17110094_NguyenAnh_Login
         private void PrintBtn_Click(object sender, EventArgs e)
         {
             PrintDialog printDlg = new PrintDialog();
-            
+            PrintDocument printDoc = new PrintDocument();
+            printDoc.DocumentName = "Print Document";
+            printDlg.Document = printDoc;
+            printDlg.AllowSelection = true;
+            printDlg.AllowSomePages = true;
+            if (printDlg.ShowDialog() == DialogResult.OK) printDoc.Print();
         }
 
         private void SaveFileBtn_Click(object sender, EventArgs e)
         {
             try
             {
-                string path = @"D:\File.txt";
-                TextWriter wrt = new StreamWriter(path);
-                wrt.WriteLine("ID  \t\t   Fname     \t\t    Lname    \t\t     Bdate     \t\t    Gender     \t\t     Phone   \t\t        Address");
-                for (int i = 0; i < DataGridView2.Rows.Count;i ++)
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "Text File|*.txt";
+                var result = dialog.ShowDialog();
+                if (result != DialogResult.OK)
+                    return;
+                StringBuilder builder = new StringBuilder();
+                int rowcount = DataGridView2.Rows.Count;
+                int columncount = DataGridView2.Columns.Count;
+                builder.AppendLine("Student ID   \tFirst Name  \tLast Name  \tDate of Birth        \tGender  \tPhone    \tAddress   ");
+                builder.AppendLine("----------------------------------------------------------------------------------------------------------------------");
+                for (int i = 0; i < rowcount; i++)
                 {
-                    for (int j = 0; j < DataGridView2.Rows.Count; j++)
+                    List<string> cols = new List<string>();
+                    for (int j = 0; j < columncount - 1; j++)
                     {
-                        wrt.Write("\t" + DataGridView2.Rows[i].Cells[j].Value.ToString() + "\t" + "|");
+                        cols.Add(DataGridView2.Rows[i].Cells[j].Value.ToString());
                     }
-                    wrt.WriteLine("");
-                    wrt.WriteLine("==========================================================================");
-
+                    builder.AppendLine(string.Join("\t", cols.ToArray()));
                 }
-                wrt.Close();
-                MessageBox.Show("Save File was Completed");
+                System.IO.File.WriteAllText(dialog.FileName, builder.ToString());
+                MessageBox.Show(@"Text file was created.");
             }
             catch (FileLoadException fe) { fe.Message.ToString(); }
         }

@@ -16,5 +16,10 @@ namespace QuanLiXe.UserControls
         {
             InitializeComponent();
         }
+
+        private void baiXeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

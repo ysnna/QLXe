@@ -145,6 +145,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_DESKTOP_RRRHOP4DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +243,17 @@
     </None>
     <None Include="_DESKTOP_RRRHOP4DataSet2.xss">
       <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_DESKTOP_RRRHOP4DataSet3.xsc">
+      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_DESKTOP_RRRHOP4DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_DESKTOP_RRRHOP4DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_DESKTOP_RRRHOP4DataSet3.xss">
+      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

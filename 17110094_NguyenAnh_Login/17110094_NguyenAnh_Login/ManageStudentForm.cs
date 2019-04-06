@@ -179,11 +179,11 @@ namespace _17110094_NguyenAnh_Login
         {
             SaveFileDialog save = new SaveFileDialog();
             save.FileName = ("student_image_" + TextBoxID.Text);
-            if(PictureBoxStudentImage.Image==null)
+            if (PictureBoxStudentImage.Image == null)
             {
                 MessageBox.Show("No image in the Picture box");
             }
-            else if(save.ShowDialog()==DialogResult.OK)
+            else if (save.ShowDialog() == DialogResult.OK)
             {
                 PictureBoxStudentImage.Image.Save(save.FileName + ("." + ImageFormat.Jpeg.ToString()));
             }
@@ -245,8 +245,9 @@ namespace _17110094_NguyenAnh_Login
             StringBuilder builder = new StringBuilder();
             int rowcount = DataGridView1.Rows.Count;
             int columncount = DataGridView1.Columns.Count;
-
-            for (int i = 0; i < rowcount ; i++)
+            builder.AppendLine("Student ID   \tFirst Name  \tLast Name  \tDate of Birth        \tGender  \tPhone    \tAddress   ");
+            builder.AppendLine("----------------------------------------------------------------------------------------------------------------------");
+            for (int i = 0; i < rowcount; i++)
             {
                 List<string> cols = new List<string>();
                 for (int j = 0; j < columncount - 1; j++)

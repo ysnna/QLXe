@@ -35,29 +35,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTinKhachHangUC));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxThongTinKhachHang = new System.Windows.Forms.GroupBox();
+            this.btThem = new System.Windows.Forms.Button();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtSoHD = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTenKH = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtHoKH = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
             this.picKH = new System.Windows.Forms.PictureBox();
             this.dgvThongTinKhachHang = new System.Windows.Forms.DataGridView();
-            this.btXoa = new System.Windows.Forms.Button();
-            this.btSua = new System.Windows.Forms.Button();
-            this._DESKTOP_RRRHOP4DataSet = new QuanLiXe._DESKTOP_RRRHOP4DataSet();
-            this.tHONGTINKHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tHONGTINKHACHHANGTableAdapter = new QuanLiXe._DESKTOP_RRRHOP4DataSetTableAdapters.THONGTINKHACHHANGTableAdapter();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtHoKH = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTenKH = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtSoHD = new System.Windows.Forms.TextBox();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.btThem = new System.Windows.Forms.Button();
-            this._DESKTOP_RRRHOP4DataSet1 = new QuanLiXe._DESKTOP_RRRHOP4DataSet1();
-            this.tHONGTINKHACHHANGBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tHONGTINKHACHHANGTableAdapter1 = new QuanLiXe._DESKTOP_RRRHOP4DataSet1TableAdapters.THONGTINKHACHHANGTableAdapter();
-            this._DESKTOP_RRRHOP4DataSet2 = new QuanLiXe._DESKTOP_RRRHOP4DataSet2();
-            this.tHONGTINKHACHHANGBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.tHONGTINKHACHHANGTableAdapter2 = new QuanLiXe._DESKTOP_RRRHOP4DataSet2TableAdapters.THONGTINKHACHHANGTableAdapter();
             this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,15 +54,26 @@
             this.sdtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soHopDongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.tHONGTINKHACHHANGBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this._DESKTOP_RRRHOP4DataSet2 = new QuanLiXe._DESKTOP_RRRHOP4DataSet2();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.btSua = new System.Windows.Forms.Button();
+            this._DESKTOP_RRRHOP4DataSet = new QuanLiXe._DESKTOP_RRRHOP4DataSet();
+            this.tHONGTINKHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tHONGTINKHACHHANGTableAdapter = new QuanLiXe._DESKTOP_RRRHOP4DataSetTableAdapters.THONGTINKHACHHANGTableAdapter();
+            this._DESKTOP_RRRHOP4DataSet1 = new QuanLiXe._DESKTOP_RRRHOP4DataSet1();
+            this.tHONGTINKHACHHANGBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tHONGTINKHACHHANGTableAdapter1 = new QuanLiXe._DESKTOP_RRRHOP4DataSet1TableAdapters.THONGTINKHACHHANGTableAdapter();
+            this.tHONGTINKHACHHANGTableAdapter2 = new QuanLiXe._DESKTOP_RRRHOP4DataSet2TableAdapters.THONGTINKHACHHANGTableAdapter();
             this.groupBoxThongTinKhachHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picKH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinKhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHONGTINKHACHHANGBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._DESKTOP_RRRHOP4DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._DESKTOP_RRRHOP4DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHONGTINKHACHHANGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._DESKTOP_RRRHOP4DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHONGTINKHACHHANGBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._DESKTOP_RRRHOP4DataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHONGTINKHACHHANGBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -108,6 +108,100 @@
             this.groupBoxThongTinKhachHang.TabIndex = 2;
             this.groupBoxThongTinKhachHang.TabStop = false;
             this.groupBoxThongTinKhachHang.Text = "Thông tin khách hàng";
+            // 
+            // btThem
+            // 
+            this.btThem.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btThem.Font = new System.Drawing.Font("UVN Ai Cap", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btThem.Location = new System.Drawing.Point(863, 299);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(130, 53);
+            this.btThem.TabIndex = 51;
+            this.btThem.Text = "Thêm";
+            this.btThem.UseVisualStyleBackColor = false;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Location = new System.Drawing.Point(494, 212);
+            this.txtDiaChi.Multiline = true;
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(447, 48);
+            this.txtDiaChi.TabIndex = 11;
+            // 
+            // txtSoHD
+            // 
+            this.txtSoHD.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoHD.Location = new System.Drawing.Point(494, 139);
+            this.txtSoHD.Name = "txtSoHD";
+            this.txtSoHD.Size = new System.Drawing.Size(100, 39);
+            this.txtSoHD.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(303, 212);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 31);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Địa chỉ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(303, 143);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 31);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Số hợp đồng";
+            // 
+            // txtTenKH
+            // 
+            this.txtTenKH.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenKH.Location = new System.Drawing.Point(722, 139);
+            this.txtTenKH.Name = "txtTenKH";
+            this.txtTenKH.Size = new System.Drawing.Size(219, 39);
+            this.txtTenKH.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(650, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 31);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Tên";
+            // 
+            // txtHoKH
+            // 
+            this.txtHoKH.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoKH.Location = new System.Drawing.Point(722, 69);
+            this.txtHoKH.Name = "txtHoKH";
+            this.txtHoKH.Size = new System.Drawing.Size(219, 39);
+            this.txtHoKH.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(650, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 31);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Họ";
+            // 
+            // txtMaKH
+            // 
+            this.txtMaKH.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaKH.Location = new System.Drawing.Point(494, 69);
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.Size = new System.Drawing.Size(100, 39);
+            this.txtMaKH.TabIndex = 3;
             // 
             // picKH
             // 
@@ -164,167 +258,6 @@
             this.dgvThongTinKhachHang.Size = new System.Drawing.Size(1041, 327);
             this.dgvThongTinKhachHang.TabIndex = 50;
             // 
-            // btXoa
-            // 
-            this.btXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btXoa.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btXoa.Font = new System.Drawing.Font("UVN Ai Cap", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btXoa.Location = new System.Drawing.Point(942, 730);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(119, 53);
-            this.btXoa.TabIndex = 20;
-            this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = false;
-            // 
-            // btSua
-            // 
-            this.btSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btSua.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btSua.Font = new System.Drawing.Font("UVN Ai Cap", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btSua.Location = new System.Drawing.Point(817, 730);
-            this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(119, 53);
-            this.btSua.TabIndex = 21;
-            this.btSua.Text = "Sửa";
-            this.btSua.UseVisualStyleBackColor = false;
-            // 
-            // _DESKTOP_RRRHOP4DataSet
-            // 
-            this._DESKTOP_RRRHOP4DataSet.DataSetName = "_DESKTOP_RRRHOP4DataSet";
-            this._DESKTOP_RRRHOP4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHONGTINKHACHHANGBindingSource
-            // 
-            this.tHONGTINKHACHHANGBindingSource.DataMember = "THONGTINKHACHHANG";
-            this.tHONGTINKHACHHANGBindingSource.DataSource = this._DESKTOP_RRRHOP4DataSet;
-            // 
-            // tHONGTINKHACHHANGTableAdapter
-            // 
-            this.tHONGTINKHACHHANGTableAdapter.ClearBeforeFill = true;
-            // 
-            // txtMaKH
-            // 
-            this.txtMaKH.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKH.Location = new System.Drawing.Point(494, 69);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(100, 39);
-            this.txtMaKH.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(650, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 31);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Họ";
-            // 
-            // txtHoKH
-            // 
-            this.txtHoKH.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoKH.Location = new System.Drawing.Point(722, 69);
-            this.txtHoKH.Name = "txtHoKH";
-            this.txtHoKH.Size = new System.Drawing.Size(219, 39);
-            this.txtHoKH.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(650, 143);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 31);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Tên";
-            // 
-            // txtTenKH
-            // 
-            this.txtTenKH.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenKH.Location = new System.Drawing.Point(722, 139);
-            this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Size = new System.Drawing.Size(219, 39);
-            this.txtTenKH.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(303, 143);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 31);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Số hợp đồng";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(303, 212);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 31);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Địa chỉ";
-            // 
-            // txtSoHD
-            // 
-            this.txtSoHD.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoHD.Location = new System.Drawing.Point(494, 139);
-            this.txtSoHD.Name = "txtSoHD";
-            this.txtSoHD.Size = new System.Drawing.Size(100, 39);
-            this.txtSoHD.TabIndex = 10;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(494, 212);
-            this.txtDiaChi.Multiline = true;
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(447, 48);
-            this.txtDiaChi.TabIndex = 11;
-            // 
-            // btThem
-            // 
-            this.btThem.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btThem.Font = new System.Drawing.Font("UVN Ai Cap", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btThem.Location = new System.Drawing.Point(863, 299);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(130, 53);
-            this.btThem.TabIndex = 51;
-            this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = false;
-            // 
-            // _DESKTOP_RRRHOP4DataSet1
-            // 
-            this._DESKTOP_RRRHOP4DataSet1.DataSetName = "_DESKTOP_RRRHOP4DataSet1";
-            this._DESKTOP_RRRHOP4DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHONGTINKHACHHANGBindingSource1
-            // 
-            this.tHONGTINKHACHHANGBindingSource1.DataMember = "THONGTINKHACHHANG";
-            this.tHONGTINKHACHHANGBindingSource1.DataSource = this._DESKTOP_RRRHOP4DataSet1;
-            // 
-            // tHONGTINKHACHHANGTableAdapter1
-            // 
-            this.tHONGTINKHACHHANGTableAdapter1.ClearBeforeFill = true;
-            // 
-            // _DESKTOP_RRRHOP4DataSet2
-            // 
-            this._DESKTOP_RRRHOP4DataSet2.DataSetName = "_DESKTOP_RRRHOP4DataSet2";
-            this._DESKTOP_RRRHOP4DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tHONGTINKHACHHANGBindingSource2
-            // 
-            this.tHONGTINKHACHHANGBindingSource2.DataMember = "THONGTINKHACHHANG";
-            this.tHONGTINKHACHHANGBindingSource2.DataSource = this._DESKTOP_RRRHOP4DataSet2;
-            // 
-            // tHONGTINKHACHHANGTableAdapter2
-            // 
-            this.tHONGTINKHACHHANGTableAdapter2.ClearBeforeFill = true;
-            // 
             // maKHDataGridViewTextBoxColumn
             // 
             this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
@@ -374,6 +307,74 @@
             this.Column1.Name = "Column1";
             this.Column1.Width = 103;
             // 
+            // tHONGTINKHACHHANGBindingSource2
+            // 
+            this.tHONGTINKHACHHANGBindingSource2.DataMember = "THONGTINKHACHHANG";
+            this.tHONGTINKHACHHANGBindingSource2.DataSource = this._DESKTOP_RRRHOP4DataSet2;
+            // 
+            // _DESKTOP_RRRHOP4DataSet2
+            // 
+            this._DESKTOP_RRRHOP4DataSet2.DataSetName = "_DESKTOP_RRRHOP4DataSet2";
+            this._DESKTOP_RRRHOP4DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btXoa
+            // 
+            this.btXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btXoa.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btXoa.Font = new System.Drawing.Font("UVN Ai Cap", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btXoa.Location = new System.Drawing.Point(942, 730);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(119, 53);
+            this.btXoa.TabIndex = 20;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = false;
+            // 
+            // btSua
+            // 
+            this.btSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSua.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btSua.Font = new System.Drawing.Font("UVN Ai Cap", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btSua.Location = new System.Drawing.Point(817, 730);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(119, 53);
+            this.btSua.TabIndex = 21;
+            this.btSua.Text = "Sửa";
+            this.btSua.UseVisualStyleBackColor = false;
+            // 
+            // _DESKTOP_RRRHOP4DataSet
+            // 
+            this._DESKTOP_RRRHOP4DataSet.DataSetName = "_DESKTOP_RRRHOP4DataSet";
+            this._DESKTOP_RRRHOP4DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tHONGTINKHACHHANGBindingSource
+            // 
+            this.tHONGTINKHACHHANGBindingSource.DataMember = "THONGTINKHACHHANG";
+            this.tHONGTINKHACHHANGBindingSource.DataSource = this._DESKTOP_RRRHOP4DataSet;
+            // 
+            // tHONGTINKHACHHANGTableAdapter
+            // 
+            this.tHONGTINKHACHHANGTableAdapter.ClearBeforeFill = true;
+            // 
+            // _DESKTOP_RRRHOP4DataSet1
+            // 
+            this._DESKTOP_RRRHOP4DataSet1.DataSetName = "_DESKTOP_RRRHOP4DataSet1";
+            this._DESKTOP_RRRHOP4DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tHONGTINKHACHHANGBindingSource1
+            // 
+            this.tHONGTINKHACHHANGBindingSource1.DataMember = "THONGTINKHACHHANG";
+            this.tHONGTINKHACHHANGBindingSource1.DataSource = this._DESKTOP_RRRHOP4DataSet1;
+            // 
+            // tHONGTINKHACHHANGTableAdapter1
+            // 
+            this.tHONGTINKHACHHANGTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tHONGTINKHACHHANGTableAdapter2
+            // 
+            this.tHONGTINKHACHHANGTableAdapter2.ClearBeforeFill = true;
+            // 
             // ThongTinKhachHangUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,12 +391,12 @@
             this.groupBoxThongTinKhachHang.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picKH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinKhachHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tHONGTINKHACHHANGBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._DESKTOP_RRRHOP4DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._DESKTOP_RRRHOP4DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHONGTINKHACHHANGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._DESKTOP_RRRHOP4DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHONGTINKHACHHANGBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._DESKTOP_RRRHOP4DataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tHONGTINKHACHHANGBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLiForm));
             this.panelForm = new System.Windows.Forms.Panel();
+            this.btQuanLiXe = new System.Windows.Forms.Button();
+            this.btThongTinTho = new System.Windows.Forms.Button();
             this.btThongTinKhachHang = new System.Windows.Forms.Button();
             this.panelClick = new System.Windows.Forms.Panel();
             this.btGioiThieu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.thongTinKhachHangUC = new QuanLiXe.UserControls.ThongTinKhachHangUC();
             this.gioiThieuUC = new QuanLiXe.UserControls.GioiThieuUC();
-            this.btThongTinTho = new System.Windows.Forms.Button();
-            this.btQuanLiXe = new System.Windows.Forms.Button();
             this.panelForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +57,36 @@
             this.panelForm.Name = "panelForm";
             this.panelForm.Size = new System.Drawing.Size(355, 797);
             this.panelForm.TabIndex = 0;
+            // 
+            // btQuanLiXe
+            // 
+            this.btQuanLiXe.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btQuanLiXe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btQuanLiXe.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btQuanLiXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btQuanLiXe.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQuanLiXe.ForeColor = System.Drawing.Color.Transparent;
+            this.btQuanLiXe.Location = new System.Drawing.Point(6, 387);
+            this.btQuanLiXe.Name = "btQuanLiXe";
+            this.btQuanLiXe.Size = new System.Drawing.Size(349, 80);
+            this.btQuanLiXe.TabIndex = 5;
+            this.btQuanLiXe.Text = "Quản lí xe";
+            this.btQuanLiXe.UseVisualStyleBackColor = true;
+            // 
+            // btThongTinTho
+            // 
+            this.btThongTinTho.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btThongTinTho.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btThongTinTho.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btThongTinTho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btThongTinTho.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThongTinTho.ForeColor = System.Drawing.Color.Transparent;
+            this.btThongTinTho.Location = new System.Drawing.Point(3, 301);
+            this.btThongTinTho.Name = "btThongTinTho";
+            this.btThongTinTho.Size = new System.Drawing.Size(349, 80);
+            this.btThongTinTho.TabIndex = 4;
+            this.btThongTinTho.Text = "Thông tin thợ";
+            this.btThongTinTho.UseVisualStyleBackColor = true;
             // 
             // btThongTinKhachHang
             // 
@@ -102,7 +132,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(32, -21);
+            this.pictureBox1.Location = new System.Drawing.Point(32, -11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(274, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -132,36 +162,6 @@
             this.gioiThieuUC.Size = new System.Drawing.Size(1080, 800);
             this.gioiThieuUC.TabIndex = 1;
             // 
-            // btThongTinTho
-            // 
-            this.btThongTinTho.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btThongTinTho.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btThongTinTho.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.btThongTinTho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btThongTinTho.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThongTinTho.ForeColor = System.Drawing.Color.Transparent;
-            this.btThongTinTho.Location = new System.Drawing.Point(3, 301);
-            this.btThongTinTho.Name = "btThongTinTho";
-            this.btThongTinTho.Size = new System.Drawing.Size(349, 80);
-            this.btThongTinTho.TabIndex = 4;
-            this.btThongTinTho.Text = "Thông tin thợ";
-            this.btThongTinTho.UseVisualStyleBackColor = true;
-            // 
-            // btQuanLiXe
-            // 
-            this.btQuanLiXe.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btQuanLiXe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btQuanLiXe.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.btQuanLiXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btQuanLiXe.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btQuanLiXe.ForeColor = System.Drawing.Color.Transparent;
-            this.btQuanLiXe.Location = new System.Drawing.Point(6, 387);
-            this.btQuanLiXe.Name = "btQuanLiXe";
-            this.btQuanLiXe.Size = new System.Drawing.Size(349, 80);
-            this.btQuanLiXe.TabIndex = 5;
-            this.btQuanLiXe.Text = "Quản lí xe";
-            this.btQuanLiXe.UseVisualStyleBackColor = true;
-            // 
             // QuanLiForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -169,8 +169,8 @@
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1426, 798);
             this.Controls.Add(this.panelForm);
-            this.Controls.Add(this.gioiThieuUC);
             this.Controls.Add(this.thongTinKhachHangUC);
+            this.Controls.Add(this.gioiThieuUC);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "QuanLiForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
