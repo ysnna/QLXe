@@ -122,22 +122,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="_DESKTOP_RRRHOP4DataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_DESKTOP_RRRHOP4DataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet4.xsd</DependentUpon>
-    </Compile>
-=======
     <EmbeddedResource Include="BaiXeForm.resx">
       <DependentUpon>BaiXeForm.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> c01e67137a4e353748826b42870024d7016f08d3
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,28 +193,6 @@
     </None>
     <None Include="_DESKTOP_RRRHOP4DataSet2.xss">
       <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet3.xsc">
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_DESKTOP_RRRHOP4DataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet3.xss">
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet4.xsc">
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_DESKTOP_RRRHOP4DataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet4.xss">
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
