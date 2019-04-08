@@ -10,7 +10,8 @@ namespace QuanLiXe
 {
     class MY_DB
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\LTWindows\QuanLiXe\QuanLiXe\DESKTOP-RRRHOP4.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Do_An_Win\LapTrinhWin\QLXe\QuanLiXe\QuanLiXe\DESKTOP-RRRHOP4.mdf;Integrated Security=True;Connect Timeout=30");
+        //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\LTWindows\QuanLiXe\QuanLiXe\DESKTOP-RRRHOP4.mdf;Integrated Security=True;Connect Timeout=30");
         public SqlConnection getConnection
         {
             get { return conn; }
