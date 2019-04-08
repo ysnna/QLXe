@@ -32,3 +32,4 @@ E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.csproj.Genera
 E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.csproj.CoreCompileInputs.cache
 E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.exe
 E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.pdb
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.BaiXeForm.resources
