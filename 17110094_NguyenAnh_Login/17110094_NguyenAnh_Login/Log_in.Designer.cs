@@ -85,6 +85,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(212, 35);
             this.txtUsername.TabIndex = 3;
+            this.txtUsername.Validated += new System.EventHandler(this.txtUsername_Validated);
             // 
             // txtPassword
             // 
@@ -188,6 +189,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.HelpButton = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

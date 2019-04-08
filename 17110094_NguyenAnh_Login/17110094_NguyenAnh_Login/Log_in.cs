@@ -50,7 +50,8 @@ namespace _17110094_NguyenAnh_Login
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            CreateControls();
+            //CreateErrorProvider();
         }
         private void ButtonRegister_Click(object sender, EventArgs e)
         {
@@ -86,6 +87,40 @@ namespace _17110094_NguyenAnh_Login
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+        }
+        void CreateControls()
+        {
+            ToolTip ToolTip1 = new ToolTip();
+            ToolTip1.IsBalloon = true;
+            ToolTip1.AutoPopDelay = 5000;
+            ToolTip1.InitialDelay = 600;
+
+            ToolTip1.ReshowDelay = 500;
+            ToolTip1.ToolTipIcon = ToolTipIcon.Info;
+            ToolTip1.ToolTipTitle = "Login";
+            ToolTip1.SetToolTip(this.txtUsername, "Nhap ky tu");
+            ToolTip1.SetToolTip(this.txtPassword, "Nhap ky tu");
+        }
+        void CreateErrorProvider()
+        {
+            ErrorProvider error = new ErrorProvider();
+            error.BlinkStyle = ErrorBlinkStyle.BlinkIfDifferentError;
+            TextBox txt = new TextBox();
+            txt.Name = "txtUsername";
+            //error.SetError(txt, "Blank is not valid");
+            this.Controls.Add(txt);
+        }
+        ErrorProvider errorProvider = new ErrorProvider();
+        private void txtUsername_Validated(object sender, EventArgs e)
+        {
+            if(txtUsername.Text!="")
+            {
+                errorProvider.SetError(this.txtUsername, "");
+            }
+            else
+            {
+                errorProvider.SetError(this.txtUsername, "Password is required");
+            }
         }
     }
 }

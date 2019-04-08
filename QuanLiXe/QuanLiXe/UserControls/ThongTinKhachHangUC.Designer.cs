@@ -52,6 +52,15 @@
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.picKH = new System.Windows.Forms.PictureBox();
             this.dgvThongTinKhachHang = new System.Windows.Forms.DataGridView();
+            this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soHopDongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaybatdau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayketthuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.picture = new System.Windows.Forms.DataGridViewImageColumn();
             this.tHONGTINKHACHHANGBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this._DESKTOP_RRRHOP4DataSet4 = new QuanLiXe._DESKTOP_RRRHOP4DataSet4();
             this.tHONGTINKHACHHANGBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -70,15 +79,6 @@
             this.tHONGTINKHACHHANGTableAdapter3 = new QuanLiXe._DESKTOP_RRRHOP4DataSet3TableAdapters.THONGTINKHACHHANGTableAdapter();
             this.tHONGTINKHACHHANGTableAdapter4 = new QuanLiXe._DESKTOP_RRRHOP4DataSet4TableAdapters.THONGTINKHACHHANGTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
-            this.maKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soHopDongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaybatdau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayketthuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.picture = new System.Windows.Forms.DataGridViewImageColumn();
             this.groupBoxThongTinKhachHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picKH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinKhachHang)).BeginInit();
@@ -357,6 +357,71 @@
             this.dgvThongTinKhachHang.TabIndex = 50;
             this.dgvThongTinKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinKhachHang_CellClick);
             // 
+            // maKHDataGridViewTextBoxColumn
+            // 
+            this.maKHDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
+            this.maKHDataGridViewTextBoxColumn.HeaderText = "Mã số";
+            this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
+            this.maKHDataGridViewTextBoxColumn.Width = 143;
+            // 
+            // hoKHDataGridViewTextBoxColumn
+            // 
+            this.hoKHDataGridViewTextBoxColumn.DataPropertyName = "HoKH";
+            this.hoKHDataGridViewTextBoxColumn.HeaderText = "Họ KH";
+            this.hoKHDataGridViewTextBoxColumn.Name = "hoKHDataGridViewTextBoxColumn";
+            this.hoKHDataGridViewTextBoxColumn.Width = 147;
+            // 
+            // tenKHDataGridViewTextBoxColumn
+            // 
+            this.tenKHDataGridViewTextBoxColumn.DataPropertyName = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.HeaderText = "Tên KH";
+            this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
+            this.tenKHDataGridViewTextBoxColumn.Width = 109;
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            this.diaChiDataGridViewTextBoxColumn.Width = 103;
+            // 
+            // sdtDataGridViewTextBoxColumn
+            // 
+            this.sdtDataGridViewTextBoxColumn.DataPropertyName = "Sdt";
+            this.sdtDataGridViewTextBoxColumn.HeaderText = "Điện thoại";
+            this.sdtDataGridViewTextBoxColumn.Name = "sdtDataGridViewTextBoxColumn";
+            this.sdtDataGridViewTextBoxColumn.Width = 191;
+            // 
+            // soHopDongDataGridViewTextBoxColumn
+            // 
+            this.soHopDongDataGridViewTextBoxColumn.DataPropertyName = "SoHopDong";
+            this.soHopDongDataGridViewTextBoxColumn.HeaderText = "Số hợp đồng";
+            this.soHopDongDataGridViewTextBoxColumn.Name = "soHopDongDataGridViewTextBoxColumn";
+            this.soHopDongDataGridViewTextBoxColumn.Width = 152;
+            // 
+            // ngaybatdau
+            // 
+            this.ngaybatdau.DataPropertyName = "ngaybatdau";
+            this.ngaybatdau.HeaderText = "Ngày bắt đầu";
+            this.ngaybatdau.Name = "ngaybatdau";
+            this.ngaybatdau.Width = 154;
+            // 
+            // ngayketthuc
+            // 
+            this.ngayketthuc.DataPropertyName = "ngayketthuc";
+            this.ngayketthuc.HeaderText = "Ngày kết thúc";
+            this.ngayketthuc.Name = "ngayketthuc";
+            this.ngayketthuc.Width = 158;
+            // 
+            // picture
+            // 
+            this.picture.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            this.picture.DataPropertyName = "picture";
+            this.picture.HeaderText = "Ảnh đại diện";
+            this.picture.Name = "picture";
+            this.picture.Width = 24;
+            // 
             // tHONGTINKHACHHANGBindingSource4
             // 
             this.tHONGTINKHACHHANGBindingSource4.DataMember = "THONGTINKHACHHANG";
@@ -404,6 +469,7 @@
             this.btSua.TabIndex = 21;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = false;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // _DESKTOP_RRRHOP4DataSet
             // 
@@ -469,71 +535,6 @@
             this.button1.Text = "Xem";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // maKHDataGridViewTextBoxColumn
-            // 
-            this.maKHDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.maKHDataGridViewTextBoxColumn.DataPropertyName = "MaKH";
-            this.maKHDataGridViewTextBoxColumn.HeaderText = "Mã số";
-            this.maKHDataGridViewTextBoxColumn.Name = "maKHDataGridViewTextBoxColumn";
-            this.maKHDataGridViewTextBoxColumn.Width = 143;
-            // 
-            // hoKHDataGridViewTextBoxColumn
-            // 
-            this.hoKHDataGridViewTextBoxColumn.DataPropertyName = "HoKH";
-            this.hoKHDataGridViewTextBoxColumn.HeaderText = "Họ KH";
-            this.hoKHDataGridViewTextBoxColumn.Name = "hoKHDataGridViewTextBoxColumn";
-            this.hoKHDataGridViewTextBoxColumn.Width = 161;
-            // 
-            // tenKHDataGridViewTextBoxColumn
-            // 
-            this.tenKHDataGridViewTextBoxColumn.DataPropertyName = "TenKH";
-            this.tenKHDataGridViewTextBoxColumn.HeaderText = "Tên KH";
-            this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
-            this.tenKHDataGridViewTextBoxColumn.Width = 176;
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            this.diaChiDataGridViewTextBoxColumn.Width = 159;
-            // 
-            // sdtDataGridViewTextBoxColumn
-            // 
-            this.sdtDataGridViewTextBoxColumn.DataPropertyName = "Sdt";
-            this.sdtDataGridViewTextBoxColumn.HeaderText = "Điện thoại";
-            this.sdtDataGridViewTextBoxColumn.Name = "sdtDataGridViewTextBoxColumn";
-            this.sdtDataGridViewTextBoxColumn.Width = 210;
-            // 
-            // soHopDongDataGridViewTextBoxColumn
-            // 
-            this.soHopDongDataGridViewTextBoxColumn.DataPropertyName = "SoHopDong";
-            this.soHopDongDataGridViewTextBoxColumn.HeaderText = "Số hợp đồng";
-            this.soHopDongDataGridViewTextBoxColumn.Name = "soHopDongDataGridViewTextBoxColumn";
-            this.soHopDongDataGridViewTextBoxColumn.Width = 245;
-            // 
-            // ngaybatdau
-            // 
-            this.ngaybatdau.DataPropertyName = "ngaybatdau";
-            this.ngaybatdau.HeaderText = "Ngày bắt đầu";
-            this.ngaybatdau.Name = "ngaybatdau";
-            this.ngaybatdau.Width = 261;
-            // 
-            // ngayketthuc
-            // 
-            this.ngayketthuc.DataPropertyName = "ngayketthuc";
-            this.ngayketthuc.HeaderText = "Ngày kết thúc";
-            this.ngayketthuc.Name = "ngayketthuc";
-            this.ngayketthuc.Width = 265;
-            // 
-            // picture
-            // 
-            this.picture.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            this.picture.DataPropertyName = "picture";
-            this.picture.HeaderText = "Ảnh đại diện";
-            this.picture.Name = "picture";
-            this.picture.Width = 24;
             // 
             // ThongTinKhachHangUC
             // 

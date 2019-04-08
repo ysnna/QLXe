@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaiXeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiXeForm.Designer.cs">
+      <DependentUpon>BaiXeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhachHang.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -116,6 +122,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="_DESKTOP_RRRHOP4DataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -126,6 +133,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_DESKTOP_RRRHOP4DataSet4.xsd</DependentUpon>
     </Compile>
+=======
+    <EmbeddedResource Include="BaiXeForm.resx">
+      <DependentUpon>BaiXeForm.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> c01e67137a4e353748826b42870024d7016f08d3
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

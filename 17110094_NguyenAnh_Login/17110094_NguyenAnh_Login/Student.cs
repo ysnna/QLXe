@@ -83,6 +83,36 @@ namespace _17110094_NguyenAnh_Login
                 mydb.closeConnection();
                 return false;
             }
+      
+        }
+        public int totalStudent()
+        {
+            SqlCommand command = new SqlCommand("SELECT id from Std", mydb.getConnection);
+            //SqlCommand comand = new SqlCommand(query + id, db.GetConnection);
+            DataTable table = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(table);
+            return table.Rows.Count;
+        }
+        public int totalMaleStudent()
+        {
+            SqlCommand command = new SqlCommand("SELECT id from Std where gender = @gdr", mydb.getConnection);
+            //SqlCommand comand = new SqlCommand(query + id, db.GetConnection);
+            command.Parameters.Add("@gdr", SqlDbType.VarChar).Value = "Male";
+            DataTable table = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(table);
+            return table.Rows.Count;
+        }
+        public int totalFemaleStudent()
+        {
+            SqlCommand command = new SqlCommand("SELECT id from Std where gender = @gdr", mydb.getConnection);
+            //SqlCommand comand = new SqlCommand(query + id, db.GetConnection);
+            command.Parameters.Add("@gdr", SqlDbType.VarChar).Value = "Female";
+            DataTable table = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(table);
+            return table.Rows.Count;
         }
     }
 }

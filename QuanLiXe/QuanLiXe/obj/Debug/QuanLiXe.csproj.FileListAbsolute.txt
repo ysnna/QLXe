@@ -15,6 +15,7 @@ E:\LTWindows\QuanLiXe\QuanLiXe\bin\Debug\DESKTOP-RRRHOP4_log.ldf
 E:\LTWindows\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.UserControls.ThongTinKhachHangUC.resources
 E:\LTWindows\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.UserControls.QuanLiXeUC.resources
 E:\LTWindows\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.UserControls.ThongTinThoUC.resources
+<<<<<<< HEAD
 D:\Do_An_Win\LapTrinhWin\QLXe\QuanLiXe\QuanLiXe\bin\Debug\DESKTOP-RRRHOP4.mdf
 D:\Do_An_Win\LapTrinhWin\QLXe\QuanLiXe\QuanLiXe\bin\Debug\DESKTOP-RRRHOP4_log.ldf
 D:\Do_An_Win\LapTrinhWin\QLXe\QuanLiXe\QuanLiXe\bin\Debug\QuanLiXe.exe.config
@@ -32,3 +33,22 @@ D:\Do_An_Win\LapTrinhWin\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.csproj.Genera
 D:\Do_An_Win\LapTrinhWin\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.csproj.CoreCompileInputs.cache
 D:\Do_An_Win\LapTrinhWin\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.exe
 D:\Do_An_Win\LapTrinhWin\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.pdb
+=======
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\bin\Debug\DESKTOP-RRRHOP4.mdf
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\bin\Debug\DESKTOP-RRRHOP4_log.ldf
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\bin\Debug\QuanLiXe.exe.config
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\bin\Debug\QuanLiXe.exe
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\bin\Debug\QuanLiXe.pdb
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.csprojAssemblyReference.cache
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.LoginForm.resources
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.Properties.Resources.resources
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.QuanLiForm.resources
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.UserControls.GioiThieuUC.resources
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.UserControls.QuanLiXeUC.resources
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.UserControls.ThongTinKhachHangUC.resources
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.UserControls.ThongTinThoUC.resources
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.csproj.GenerateResource.cache
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.csproj.CoreCompileInputs.cache
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.exe
+E:\LTWindows\WindowsQLXe\QLXe\QuanLiXe\QuanLiXe\obj\Debug\QuanLiXe.pdb
+>>>>>>> c01e67137a4e353748826b42870024d7016f08d3

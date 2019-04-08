@@ -103,8 +103,20 @@
       <DependentUpon>ManageStudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MY_DB.cs" />
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticForm.Designer.cs">
+      <DependentUpon>StaticForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="StudentsListForm.cs">
       <SubType>Form</SubType>
@@ -133,6 +145,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_DESKTOP_RRRHOP4DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageStudentForm.resx">
       <DependentUpon>ManageStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticForm.resx">
+      <DependentUpon>StaticForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentsListForm.resx">
       <DependentUpon>StudentsListForm.cs</DependentUpon>
@@ -220,6 +243,17 @@
     </None>
     <None Include="_DESKTOP_RRRHOP4DataSet2.xss">
       <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_DESKTOP_RRRHOP4DataSet3.xsc">
+      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_DESKTOP_RRRHOP4DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_DESKTOP_RRRHOP4DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_DESKTOP_RRRHOP4DataSet3.xss">
+      <DependentUpon>_DESKTOP_RRRHOP4DataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

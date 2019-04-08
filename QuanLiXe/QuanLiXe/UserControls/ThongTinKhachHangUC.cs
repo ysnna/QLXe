@@ -18,6 +18,7 @@ namespace QuanLiXe.UserControls
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
         KhachHang kh = new KhachHang();
 
         private void btThem_Click(object sender, EventArgs e)
@@ -134,6 +135,12 @@ namespace QuanLiXe.UserControls
             dateTimePicker1.CustomFormat = "hh:mm:ss  dd-MM-yyyy";
             dateTimePicker2.Format = DateTimePickerFormat.Custom;
             dateTimePicker2.CustomFormat = "hh:mm:ss  dd-MM-yyyy";
+=======
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> c01e67137a4e353748826b42870024d7016f08d3
         }
     }
 }
