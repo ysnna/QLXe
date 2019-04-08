@@ -19,7 +19,7 @@ namespace QuanLiXe.UserControls
 
         private void btThem_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("hhi");
         }
     }
 }
