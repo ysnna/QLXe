@@ -74,6 +74,12 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage.Designer.cs">
+      <DependentUpon>Manage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MY_DB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="QuanLiForm.Designer.cs">
       <DependentUpon>QuanLiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyBaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyBaiXe.Designer.cs">
+      <DependentUpon>QuanLyBaiXe.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\GioiThieuUC.cs">
       <SubType>UserControl</SubType>
@@ -128,6 +140,9 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manage.resx">
+      <DependentUpon>Manage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -139,6 +154,9 @@
     </Compile>
     <EmbeddedResource Include="QuanLiForm.resx">
       <DependentUpon>QuanLiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyBaiXe.resx">
+      <DependentUpon>QuanLyBaiXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\GioiThieuUC.resx">
       <DependentUpon>GioiThieuUC.cs</DependentUpon>
