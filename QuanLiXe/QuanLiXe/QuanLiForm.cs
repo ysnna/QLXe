@@ -37,5 +37,11 @@ namespace QuanLiXe
             panelClick.Top = btThongTinKhachHang.Top;
             thongTinKhachHangUC.BringToFront();
         }
+
+        private void btQuanLiXe_Click(object sender, EventArgs e)
+        {
+            Manage mn = new Manage();
+            mn.ShowDialog(this);
+        }
     }
 }

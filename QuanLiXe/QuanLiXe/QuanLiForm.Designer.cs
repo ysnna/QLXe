@@ -72,6 +72,7 @@
             this.btQuanLiXe.TabIndex = 5;
             this.btQuanLiXe.Text = "Quản lí xe";
             this.btQuanLiXe.UseVisualStyleBackColor = true;
+            this.btQuanLiXe.Click += new System.EventHandler(this.btQuanLiXe_Click);
             // 
             // btThongTinTho
             // 
@@ -147,6 +148,7 @@
             this.thongTinKhachHangUC.BackColor = System.Drawing.Color.LemonChiffon;
             this.thongTinKhachHangUC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("thongTinKhachHangUC.BackgroundImage")));
             this.thongTinKhachHangUC.Location = new System.Drawing.Point(350, 0);
+            this.thongTinKhachHangUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.thongTinKhachHangUC.Name = "thongTinKhachHangUC";
             this.thongTinKhachHangUC.Size = new System.Drawing.Size(1080, 800);
             this.thongTinKhachHangUC.TabIndex = 2;
@@ -158,6 +160,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gioiThieuUC.BackColor = System.Drawing.Color.LightBlue;
             this.gioiThieuUC.Location = new System.Drawing.Point(350, 0);
+            this.gioiThieuUC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gioiThieuUC.Name = "gioiThieuUC";
             this.gioiThieuUC.Size = new System.Drawing.Size(1080, 800);
             this.gioiThieuUC.TabIndex = 1;
