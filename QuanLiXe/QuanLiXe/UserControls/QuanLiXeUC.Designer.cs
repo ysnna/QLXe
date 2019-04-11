@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.baiXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quanLiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(178, 185);
+            this.pictureBox1.Location = new System.Drawing.Point(400, 124);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(352, 372);
             this.pictureBox1.TabIndex = 0;
@@ -56,11 +56,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1080, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // fileToolStripMenuItem
             // 
@@ -83,6 +78,11 @@
             this.quanLiToolStripMenuItem.Name = "quanLiToolStripMenuItem";
             this.quanLiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quanLiToolStripMenuItem.Text = "Quản lí";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // QuanLiXeUC
             // 
