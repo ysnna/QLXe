@@ -58,10 +58,10 @@ namespace QuanLiXe
             }
         }
         //Update thông tin, cần bổ sung biến //**
-        public bool updateStudent( MemoryStream pic)
+        public bool updateStudent(MemoryStream pic)
         {
             SqlCommand cmd = new SqlCommand("update Std set fname = @fn, lname = @ln, bdate = @bdt, gender = @gdr, phone = @phn, address = @adrs, picture = @pic where id = @id", mydb.getConnection);
-           
+
             cmd.Parameters.Add("@pic", SqlDbType.Image).Value = pic.ToArray();
             mydb.openConnection();
             if (cmd.ExecuteNonQuery() == 1)
