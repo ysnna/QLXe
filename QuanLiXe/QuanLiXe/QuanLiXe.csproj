@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -67,6 +67,11 @@
     <Compile Include="BaiXeForm.Designer.cs">
       <DependentUpon>BaiXeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="dataSetBaiXe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataSetBaiXe.xsd</DependentUpon>
+    </Compile>
     <Compile Include="KhachHang.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -74,26 +79,15 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manage.Designer.cs">
-      <DependentUpon>Manage.cs</DependentUpon>
-    </Compile>
     <Compile Include="MY_DB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLiBaiXe_Class.cs" />
     <Compile Include="QuanLiForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuanLiForm.Designer.cs">
       <DependentUpon>QuanLiForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyBaiXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuanLyBaiXe.Designer.cs">
-      <DependentUpon>QuanLyBaiXe.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\GioiThieuUC.cs">
       <SubType>UserControl</SubType>
@@ -101,17 +95,17 @@
     <Compile Include="UserControls\GioiThieuUC.Designer.cs">
       <DependentUpon>GioiThieuUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\QuanLiXeUC.cs">
+    <Compile Include="UserControls\QuanLiTatCaXe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\QuanLiXeUC.Designer.cs">
-      <DependentUpon>QuanLiXeUC.cs</DependentUpon>
+    <Compile Include="UserControls\QuanLiTatCaXe.Designer.cs">
+      <DependentUpon>QuanLiTatCaXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ThongTinKhachHangUC.cs">
+    <Compile Include="UserControls\GiaoDienQuanLiXeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ThongTinKhachHangUC.Designer.cs">
-      <DependentUpon>ThongTinKhachHangUC.cs</DependentUpon>
+    <Compile Include="UserControls\GiaoDienQuanLiXeUC.Designer.cs">
+      <DependentUpon>GiaoDienQuanLiXeUC.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ThongTinThoUC.cs">
       <SubType>UserControl</SubType>
@@ -119,29 +113,22 @@
     <Compile Include="UserControls\ThongTinThoUC.Designer.cs">
       <DependentUpon>ThongTinThoUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\TongDoanThuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TongDoanThuUC.Designer.cs">
+      <DependentUpon>TongDoanThuUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="_DESKTOP_RRRHOP4DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_DESKTOP_RRRHOP4DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_DESKTOP_RRRHOP4DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_DESKTOP_RRRHOP4DataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BaiXeForm.resx">
       <DependentUpon>BaiXeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Manage.resx">
-      <DependentUpon>Manage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -155,21 +142,32 @@
     <EmbeddedResource Include="QuanLiForm.resx">
       <DependentUpon>QuanLiForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyBaiXe.resx">
-      <DependentUpon>QuanLyBaiXe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\GioiThieuUC.resx">
       <DependentUpon>GioiThieuUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\QuanLiXeUC.resx">
-      <DependentUpon>QuanLiXeUC.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\QuanLiTatCaXe.resx">
+      <DependentUpon>QuanLiTatCaXe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ThongTinKhachHangUC.resx">
-      <DependentUpon>ThongTinKhachHangUC.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\GiaoDienQuanLiXeUC.resx">
+      <DependentUpon>GiaoDienQuanLiXeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ThongTinThoUC.resx">
       <DependentUpon>ThongTinThoUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TongDoanThuUC.resx">
+      <DependentUpon>TongDoanThuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dataSetBaiXe.xsc">
+      <DependentUpon>dataSetBaiXe.xsd</DependentUpon>
+    </None>
+    <None Include="dataSetBaiXe.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataSetBaiXe.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dataSetBaiXe.xss">
+      <DependentUpon>dataSetBaiXe.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -190,40 +188,9 @@
     <None Include="_DESKTOP_RRRHOP4DataSet.xss">
       <DependentUpon>_DESKTOP_RRRHOP4DataSet.xsd</DependentUpon>
     </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet1.xsc">
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_DESKTOP_RRRHOP4DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet1.xss">
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet2.xsc">
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_DESKTOP_RRRHOP4DataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_DESKTOP_RRRHOP4DataSet2.xss">
-      <DependentUpon>_DESKTOP_RRRHOP4DataSet2.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DESKTOP-RRRHOP4.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DESKTOP-RRRHOP4_log.ldf">
-      <DependentUpon>DESKTOP-RRRHOP4.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -236,6 +203,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DESKTOP-RRRHOP4.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DESKTOP-RRRHOP4_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DESKTOP-RRRHOP4.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
