@@ -68,7 +68,7 @@ namespace QuanLiXe.UserControls
             //cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = txtPassword.Text;
             da.SelectCommand = cmd;
             da.Fill(dt);
-            bool kt = false;
+            
             int i = 0;
             while (i < dt.Rows.Count)
             {
@@ -79,17 +79,17 @@ namespace QuanLiXe.UserControls
                         switch (j)
                         {
                             case 1:
-                                btKhuVuc.Text = "A" + (i + 1);
+                                btKhuVuc.Text = "A." + (i + 1);
                                 i = 30;
                                 j = 4;
                                 break;
                             case 2:
-                                btKhuVuc.Text = "B" + (i + 1);
+                                btKhuVuc.Text = "B." + (i + 1);
                                 j = 4;
                                 i = 30;
                                 break;
                             case 3:
-                                btKhuVuc.Text = "C" + (i + 1);
+                                btKhuVuc.Text = "C." + (i + 1);
                                 j = 4;
                                 i = 30;
                                 break;
@@ -122,7 +122,7 @@ namespace QuanLiXe.UserControls
         //Nút lưu xe (Lưu vào database rồi đổ lên Form Quản Lí Tất Cả Xe)
         private void btMoiXeVao_Click(object sender, EventArgs e)
         {
-            string vitri = btKhuVuc.Text.ToString();
+            string vitri = btKhuVuc.Text.ToString().Replace(".","");
             string loaixe;
             if (Oto.Checked == true)
             {
@@ -154,13 +154,32 @@ namespace QuanLiXe.UserControls
             MemoryStream bienso = new MemoryStream();
             DateTime ngaygui = DTPNgayGui.Value;
             DateTime giogui = DTPGioGui.Value;
+    
             pictureBoxBienSoXe.Image.Save(bienso, pictureBoxBienSoXe.Image.RawFormat);
             pictureBoxNguoiGui.Image.Save(nguoigui, pictureBoxNguoiGui.Image.RawFormat);
-
+            
             if (kh.insertCus(vitri, loaixe, bienso, nguoigui, ngaygui, giogui, yeucau))
                 MessageBox.Show("Xe Đã Nhận Vào Bãi", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else MessageBox.Show("Error", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            string s = btKhuVuc.Text.ToString();
+            string[] sp = s.Split('.');
+            if (sp[0]=="A")
+            {
+                kh.updateBaiXe("1", sp[1]);
+            }
+            else if (sp[0] == "B")
+            {
+                kh.updateBaiXe2("1", sp[1]);
+            }
+            else
+            {
+                kh.updateBaiXe3("1", sp[1]);
+            }
         }
+        
+
+        
         // Tao su kien khi Luu hinh anh
         private void pictureBoxNguoiGui_Click(object sender, EventArgs e)
         {

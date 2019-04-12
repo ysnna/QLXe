@@ -64,6 +64,64 @@ namespace QuanLiXe
                 return false;
             }
         }
+        public bool updateBaiXe(string num,string vitri)
+        {
+            SqlCommand cmd = new SqlCommand("update BAIXE set A=@num where vitriXe=@vitri ", mydb.getConnection);
+            cmd.Parameters.Add("@num", SqlDbType.VarChar).Value = num ;
+            
+            cmd.Parameters.Add("@vitri", SqlDbType.VarChar).Value = vitri; 
+            mydb.openConnection();
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+
+        }
+        public bool updateBaiXe2(string num, string vitri)
+        {
+            SqlCommand cmd = new SqlCommand("update BAIXE set B=@num where vitriXe=@vitri ", mydb.getConnection);
+            cmd.Parameters.Add("@num", SqlDbType.VarChar).Value = num;
+
+            cmd.Parameters.Add("@vitri", SqlDbType.VarChar).Value = vitri;
+            mydb.openConnection();
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+
+        }
+        public bool updateBaiXe3(string num, string vitri)
+        {
+            SqlCommand cmd = new SqlCommand("update BAIXE set C=@num where vitriXe=@vitri ", mydb.getConnection);
+            cmd.Parameters.Add("@num", SqlDbType.VarChar).Value = num;
+
+            cmd.Parameters.Add("@vitri", SqlDbType.VarChar).Value = vitri;
+            mydb.openConnection();
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+
+        }
+
         //Update thông tin, cần bổ sung biến //**
         //public bool updateCus(string vitri, string loaixe, MemoryStream anhbienso, MemoryStream anhxe,
         //    DateTime ngaygui, DateTime giogui, string yeucau)
