@@ -35,9 +35,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaiXeForm));
             this.dgvBaiXe = new System.Windows.Forms.DataGridView();
-            this.dataSetBaiXe = new QuanLiXe.dataSetBaiXe();
             this.bAIXEBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetBaiXe = new QuanLiXe.dataSetBaiXe();
             this.bAIXETableAdapter = new QuanLiXe.dataSetBaiXeTableAdapters.BAIXETableAdapter();
+            this.btBaiOto = new System.Windows.Forms.Button();
+            this.btBaiXeMay = new System.Windows.Forms.Button();
+            this.btBaiXeDap = new System.Windows.Forms.Button();
+            this.btBackThoat = new System.Windows.Forms.Button();
             this.vitriXeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khuADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khuBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,13 +52,9 @@
             this.khuGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khuHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khuKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btBaiOto = new System.Windows.Forms.Button();
-            this.btBaiXeMay = new System.Windows.Forms.Button();
-            this.btBaiXeDap = new System.Windows.Forms.Button();
-            this.btBackThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaiXe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetBaiXe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bAIXEBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetBaiXe)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvBaiXe
@@ -99,7 +99,8 @@
             this.dgvBaiXe.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvBaiXe.Enabled = false;
             this.dgvBaiXe.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dgvBaiXe.Location = new System.Drawing.Point(10, 68);
+            this.dgvBaiXe.Location = new System.Drawing.Point(13, 84);
+            this.dgvBaiXe.Margin = new System.Windows.Forms.Padding(4);
             this.dgvBaiXe.Name = "dgvBaiXe";
             this.dgvBaiXe.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -116,111 +117,22 @@
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             this.dgvBaiXe.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvBaiXe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvBaiXe.Size = new System.Drawing.Size(1187, 662);
+            this.dgvBaiXe.Size = new System.Drawing.Size(1583, 815);
             this.dgvBaiXe.TabIndex = 0;
-            // 
-            // dataSetBaiXe
-            // 
-            this.dataSetBaiXe.DataSetName = "dataSetBaiXe";
-            this.dataSetBaiXe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bAIXEBindingSource
             // 
             this.bAIXEBindingSource.DataMember = "BAIXE";
             this.bAIXEBindingSource.DataSource = this.dataSetBaiXe;
             // 
+            // dataSetBaiXe
+            // 
+            this.dataSetBaiXe.DataSetName = "dataSetBaiXe";
+            this.dataSetBaiXe.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // bAIXETableAdapter
             // 
             this.bAIXETableAdapter.ClearBeforeFill = true;
-            // 
-            // vitriXeDataGridViewTextBoxColumn
-            // 
-            this.vitriXeDataGridViewTextBoxColumn.DataPropertyName = "vitriXe";
-            this.vitriXeDataGridViewTextBoxColumn.HeaderText = "Vị trí xe";
-            this.vitriXeDataGridViewTextBoxColumn.Name = "vitriXeDataGridViewTextBoxColumn";
-            this.vitriXeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.vitriXeDataGridViewTextBoxColumn.Width = 134;
-            // 
-            // khuADataGridViewTextBoxColumn
-            // 
-            this.khuADataGridViewTextBoxColumn.DataPropertyName = "khuA";
-            this.khuADataGridViewTextBoxColumn.HeaderText = "Khu A";
-            this.khuADataGridViewTextBoxColumn.Name = "khuADataGridViewTextBoxColumn";
-            this.khuADataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuADataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.khuADataGridViewTextBoxColumn.Width = 115;
-            // 
-            // khuBDataGridViewTextBoxColumn
-            // 
-            this.khuBDataGridViewTextBoxColumn.DataPropertyName = "khuB";
-            this.khuBDataGridViewTextBoxColumn.HeaderText = "Khu B";
-            this.khuBDataGridViewTextBoxColumn.Name = "khuBDataGridViewTextBoxColumn";
-            this.khuBDataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuBDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.khuBDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // khuCDataGridViewTextBoxColumn
-            // 
-            this.khuCDataGridViewTextBoxColumn.DataPropertyName = "khuC";
-            this.khuCDataGridViewTextBoxColumn.HeaderText = "Khu C";
-            this.khuCDataGridViewTextBoxColumn.Name = "khuCDataGridViewTextBoxColumn";
-            this.khuCDataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuCDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.khuCDataGridViewTextBoxColumn.Width = 117;
-            // 
-            // khuDDataGridViewTextBoxColumn
-            // 
-            this.khuDDataGridViewTextBoxColumn.DataPropertyName = "khuD";
-            this.khuDDataGridViewTextBoxColumn.HeaderText = "Khu D";
-            this.khuDDataGridViewTextBoxColumn.Name = "khuDDataGridViewTextBoxColumn";
-            this.khuDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.khuDDataGridViewTextBoxColumn.Width = 117;
-            // 
-            // khuEDataGridViewTextBoxColumn
-            // 
-            this.khuEDataGridViewTextBoxColumn.DataPropertyName = "khuE";
-            this.khuEDataGridViewTextBoxColumn.HeaderText = "Khu E";
-            this.khuEDataGridViewTextBoxColumn.Name = "khuEDataGridViewTextBoxColumn";
-            this.khuEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.khuEDataGridViewTextBoxColumn.Width = 115;
-            // 
-            // khuFDataGridViewTextBoxColumn
-            // 
-            this.khuFDataGridViewTextBoxColumn.DataPropertyName = "khuF";
-            this.khuFDataGridViewTextBoxColumn.HeaderText = "Khu F";
-            this.khuFDataGridViewTextBoxColumn.Name = "khuFDataGridViewTextBoxColumn";
-            this.khuFDataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuFDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.khuFDataGridViewTextBoxColumn.Width = 114;
-            // 
-            // khuGDataGridViewTextBoxColumn
-            // 
-            this.khuGDataGridViewTextBoxColumn.DataPropertyName = "khuG";
-            this.khuGDataGridViewTextBoxColumn.HeaderText = "Khu G";
-            this.khuGDataGridViewTextBoxColumn.Name = "khuGDataGridViewTextBoxColumn";
-            this.khuGDataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuGDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.khuGDataGridViewTextBoxColumn.Width = 118;
-            // 
-            // khuHDataGridViewTextBoxColumn
-            // 
-            this.khuHDataGridViewTextBoxColumn.DataPropertyName = "khuH";
-            this.khuHDataGridViewTextBoxColumn.HeaderText = "Khu H";
-            this.khuHDataGridViewTextBoxColumn.Name = "khuHDataGridViewTextBoxColumn";
-            this.khuHDataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuHDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.khuHDataGridViewTextBoxColumn.Width = 118;
-            // 
-            // khuKDataGridViewTextBoxColumn
-            // 
-            this.khuKDataGridViewTextBoxColumn.DataPropertyName = "khuK";
-            this.khuKDataGridViewTextBoxColumn.HeaderText = "Khu K";
-            this.khuKDataGridViewTextBoxColumn.Name = "khuKDataGridViewTextBoxColumn";
-            this.khuKDataGridViewTextBoxColumn.ReadOnly = true;
-            this.khuKDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.khuKDataGridViewTextBoxColumn.Width = 118;
             // 
             // btBaiOto
             // 
@@ -229,9 +141,10 @@
             this.btBaiOto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBaiOto.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btBaiOto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBaiOto.Location = new System.Drawing.Point(147, 8);
+            this.btBaiOto.Location = new System.Drawing.Point(196, 10);
+            this.btBaiOto.Margin = new System.Windows.Forms.Padding(4);
             this.btBaiOto.Name = "btBaiOto";
-            this.btBaiOto.Size = new System.Drawing.Size(350, 61);
+            this.btBaiOto.Size = new System.Drawing.Size(467, 75);
             this.btBaiOto.TabIndex = 1;
             this.btBaiOto.Text = "Bãi xe ô tô";
             this.btBaiOto.UseVisualStyleBackColor = false;
@@ -243,9 +156,10 @@
             this.btBaiXeMay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBaiXeMay.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btBaiXeMay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBaiXeMay.Location = new System.Drawing.Point(495, 8);
+            this.btBaiXeMay.Location = new System.Drawing.Point(660, 10);
+            this.btBaiXeMay.Margin = new System.Windows.Forms.Padding(4);
             this.btBaiXeMay.Name = "btBaiXeMay";
-            this.btBaiXeMay.Size = new System.Drawing.Size(464, 61);
+            this.btBaiXeMay.Size = new System.Drawing.Size(619, 75);
             this.btBaiXeMay.TabIndex = 2;
             this.btBaiXeMay.Text = "Bãi xe máy";
             this.btBaiXeMay.UseVisualStyleBackColor = false;
@@ -257,9 +171,10 @@
             this.btBaiXeDap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBaiXeDap.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btBaiXeDap.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBaiXeDap.Location = new System.Drawing.Point(958, 8);
+            this.btBaiXeDap.Location = new System.Drawing.Point(1277, 10);
+            this.btBaiXeDap.Margin = new System.Windows.Forms.Padding(4);
             this.btBaiXeDap.Name = "btBaiXeDap";
-            this.btBaiXeDap.Size = new System.Drawing.Size(239, 61);
+            this.btBaiXeDap.Size = new System.Drawing.Size(319, 75);
             this.btBaiXeDap.TabIndex = 3;
             this.btBaiXeDap.Text = "Bãi xe đạp";
             this.btBaiXeDap.UseVisualStyleBackColor = false;
@@ -272,26 +187,117 @@
             this.btBackThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btBackThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btBackThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBackThoat.Location = new System.Drawing.Point(10, 8);
+            this.btBackThoat.Location = new System.Drawing.Point(13, 10);
+            this.btBackThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btBackThoat.Name = "btBackThoat";
-            this.btBackThoat.Size = new System.Drawing.Size(137, 63);
+            this.btBackThoat.Size = new System.Drawing.Size(183, 78);
             this.btBackThoat.TabIndex = 4;
             this.btBackThoat.UseVisualStyleBackColor = false;
             this.btBackThoat.Click += new System.EventHandler(this.btBackThoat_Click);
             // 
+            // vitriXeDataGridViewTextBoxColumn
+            // 
+            this.vitriXeDataGridViewTextBoxColumn.DataPropertyName = "vitriXe";
+            this.vitriXeDataGridViewTextBoxColumn.HeaderText = "Vị trí xe";
+            this.vitriXeDataGridViewTextBoxColumn.Name = "vitriXeDataGridViewTextBoxColumn";
+            this.vitriXeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.vitriXeDataGridViewTextBoxColumn.Width = 162;
+            // 
+            // khuADataGridViewTextBoxColumn
+            // 
+            this.khuADataGridViewTextBoxColumn.DataPropertyName = "khuA";
+            this.khuADataGridViewTextBoxColumn.HeaderText = "Khu A";
+            this.khuADataGridViewTextBoxColumn.Name = "khuADataGridViewTextBoxColumn";
+            this.khuADataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuADataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.khuADataGridViewTextBoxColumn.Width = 141;
+            // 
+            // khuBDataGridViewTextBoxColumn
+            // 
+            this.khuBDataGridViewTextBoxColumn.DataPropertyName = "khuB";
+            this.khuBDataGridViewTextBoxColumn.HeaderText = "Khu B";
+            this.khuBDataGridViewTextBoxColumn.Name = "khuBDataGridViewTextBoxColumn";
+            this.khuBDataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuBDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.khuBDataGridViewTextBoxColumn.Width = 142;
+            // 
+            // khuCDataGridViewTextBoxColumn
+            // 
+            this.khuCDataGridViewTextBoxColumn.DataPropertyName = "khuC";
+            this.khuCDataGridViewTextBoxColumn.HeaderText = "Khu C";
+            this.khuCDataGridViewTextBoxColumn.Name = "khuCDataGridViewTextBoxColumn";
+            this.khuCDataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuCDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.khuCDataGridViewTextBoxColumn.Width = 144;
+            // 
+            // khuDDataGridViewTextBoxColumn
+            // 
+            this.khuDDataGridViewTextBoxColumn.DataPropertyName = "khuD";
+            this.khuDDataGridViewTextBoxColumn.HeaderText = "Khu D";
+            this.khuDDataGridViewTextBoxColumn.Name = "khuDDataGridViewTextBoxColumn";
+            this.khuDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.khuDDataGridViewTextBoxColumn.Width = 144;
+            // 
+            // khuEDataGridViewTextBoxColumn
+            // 
+            this.khuEDataGridViewTextBoxColumn.DataPropertyName = "khuE";
+            this.khuEDataGridViewTextBoxColumn.HeaderText = "Khu E";
+            this.khuEDataGridViewTextBoxColumn.Name = "khuEDataGridViewTextBoxColumn";
+            this.khuEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.khuEDataGridViewTextBoxColumn.Width = 142;
+            // 
+            // khuFDataGridViewTextBoxColumn
+            // 
+            this.khuFDataGridViewTextBoxColumn.DataPropertyName = "khuF";
+            this.khuFDataGridViewTextBoxColumn.HeaderText = "Khu F";
+            this.khuFDataGridViewTextBoxColumn.Name = "khuFDataGridViewTextBoxColumn";
+            this.khuFDataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuFDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.khuFDataGridViewTextBoxColumn.Width = 140;
+            // 
+            // khuGDataGridViewTextBoxColumn
+            // 
+            this.khuGDataGridViewTextBoxColumn.DataPropertyName = "khuG";
+            this.khuGDataGridViewTextBoxColumn.HeaderText = "Khu G";
+            this.khuGDataGridViewTextBoxColumn.Name = "khuGDataGridViewTextBoxColumn";
+            this.khuGDataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuGDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.khuGDataGridViewTextBoxColumn.Width = 145;
+            // 
+            // khuHDataGridViewTextBoxColumn
+            // 
+            this.khuHDataGridViewTextBoxColumn.DataPropertyName = "khuH";
+            this.khuHDataGridViewTextBoxColumn.HeaderText = "Khu H";
+            this.khuHDataGridViewTextBoxColumn.Name = "khuHDataGridViewTextBoxColumn";
+            this.khuHDataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuHDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.khuHDataGridViewTextBoxColumn.Width = 145;
+            // 
+            // khuKDataGridViewTextBoxColumn
+            // 
+            this.khuKDataGridViewTextBoxColumn.DataPropertyName = "khuK";
+            this.khuKDataGridViewTextBoxColumn.HeaderText = "Khu K";
+            this.khuKDataGridViewTextBoxColumn.Name = "khuKDataGridViewTextBoxColumn";
+            this.khuKDataGridViewTextBoxColumn.ReadOnly = true;
+            this.khuKDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.khuKDataGridViewTextBoxColumn.Width = 145;
+            // 
             // BaiXeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1206, 740);
+            this.ClientSize = new System.Drawing.Size(1608, 911);
             this.Controls.Add(this.btBaiXeDap);
             this.Controls.Add(this.btBaiXeMay);
             this.Controls.Add(this.btBaiOto);
             this.Controls.Add(this.dgvBaiXe);
             this.Controls.Add(this.btBackThoat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BaiXeForm";
@@ -299,18 +305,21 @@
             this.Text = "BaiXeForm";
             this.Load += new System.EventHandler(this.BaiXeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaiXe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetBaiXe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bAIXEBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetBaiXe)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvBaiXe;
         private dataSetBaiXe dataSetBaiXe;
         private System.Windows.Forms.BindingSource bAIXEBindingSource;
         private dataSetBaiXeTableAdapters.BAIXETableAdapter bAIXETableAdapter;
+        private System.Windows.Forms.Button btBaiOto;
+        private System.Windows.Forms.Button btBaiXeMay;
+        private System.Windows.Forms.Button btBaiXeDap;
+        private System.Windows.Forms.Button btBackThoat;
+        public System.Windows.Forms.DataGridView dgvBaiXe;
         private System.Windows.Forms.DataGridViewTextBoxColumn vitriXeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn khuADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn khuBDataGridViewTextBoxColumn;
@@ -321,9 +330,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn khuGDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn khuHDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn khuKDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btBaiOto;
-        private System.Windows.Forms.Button btBaiXeMay;
-        private System.Windows.Forms.Button btBaiXeDap;
-        private System.Windows.Forms.Button btBackThoat;
     }
 }

@@ -43,13 +43,67 @@ namespace QuanLiXe.UserControls
             Day.Checked = false;
             Hour.Checked = true;
         }
-
+        BaiXeForm baixe = new BaiXeForm();
         //Check xem xe gửi Loại Gì
         private void btOto_Click(object sender, EventArgs e)
         {
             Oto.Checked = true;
             XeMay.Checked = false;
             XeDap.Checked = false;
+            //SqlCommand cmd = new SqlCommand("select * from BAIXE");
+
+            //baixe.dgvBaiXe.DataSource = kh.getCus(cmd);
+            //for(int i = 0; i < 20;i++)
+            //    for (int j = 0; i < 3; j ++ )
+            //    {
+            //        if (Convert.ToInt32(baixe.dgvBaiXe.Rows[i].Cells[j].Value) == 0)
+            //            btKhuVuc.Text = ".....";
+            //    }
+            MY_DB db = new MY_DB();
+            KhachHang student = new KhachHang();
+            SqlDataAdapter da = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand("select * from BAIXE", db.getConnection);
+            //cmd.Parameters.Add("@username", SqlDbType.VarChar).Value = txtUsername.Text;
+            //cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = txtPassword.Text;
+            da.SelectCommand = cmd;
+            da.Fill(dt);
+            bool kt = false;
+            int i = 0;
+            while (i < dt.Rows.Count)
+            {
+                for (int j = 1; j < 4; j++)
+                {
+                    if (dt.Rows[i][j].ToString() == "0")
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                btKhuVuc.Text = "A" + (i + 1);
+                                i = 30;
+                                j = 4;
+                                break;
+                            case 2:
+                                btKhuVuc.Text = "B" + (i + 1);
+                                j = 4;
+                                i = 30;
+                                break;
+                            case 3:
+                                btKhuVuc.Text = "C" + (i + 1);
+                                j = 4;
+                                i = 30;
+                                break;
+
+                        }
+
+                    }
+                }
+                i++;
+            }
+
+            //if (txtUsername.Text == dt.Rows[i]["username"].ToString() && txtPassword.Text == dt.Rows[i]["password"].ToString())
+            //this.DialogResult = DialogResult.OK;
+
         }
 
         private void btXeMay_Click(object sender, EventArgs e)
@@ -70,9 +124,9 @@ namespace QuanLiXe.UserControls
         {
             string vitri = btKhuVuc.Text.ToString();
             string loaixe;
-            if(Oto.Checked == true)
+            if (Oto.Checked == true)
             {
-                 loaixe = btOto.Text.ToString();
+                loaixe = btOto.Text.ToString();
             }
             else if (XeMay.Checked == true)
             {
@@ -80,7 +134,7 @@ namespace QuanLiXe.UserControls
             }
             else
             {
-                 loaixe = btXeDap.Text.ToString();
+                loaixe = btXeDap.Text.ToString();
             }
             string yeucau;
             if (Month.Checked == true)
@@ -103,7 +157,7 @@ namespace QuanLiXe.UserControls
             pictureBoxBienSoXe.Image.Save(bienso, pictureBoxBienSoXe.Image.RawFormat);
             pictureBoxNguoiGui.Image.Save(nguoigui, pictureBoxNguoiGui.Image.RawFormat);
 
-            if (kh.insertCus(vitri,loaixe,bienso,nguoigui,ngaygui,giogui,yeucau ))
+            if (kh.insertCus(vitri, loaixe, bienso, nguoigui, ngaygui, giogui, yeucau))
                 MessageBox.Show("Xe Đã Nhận Vào Bãi", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else MessageBox.Show("Error", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
@@ -124,6 +178,6 @@ namespace QuanLiXe.UserControls
                 pictureBoxBienSoXe.Image = Image.FromFile(open.FileName);
         }
 
-   
+
     }
 }
