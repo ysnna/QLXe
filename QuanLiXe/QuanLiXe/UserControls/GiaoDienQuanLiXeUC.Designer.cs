@@ -33,12 +33,6 @@
             this.btKhuVuc = new System.Windows.Forms.Button();
             this.btMoiXeVao = new System.Windows.Forms.Button();
             this.pictureBoxBienSoXe = new System.Windows.Forms.PictureBox();
-            this.btGuiTheoThang = new System.Windows.Forms.Button();
-            this.btGuiTheoNgay = new System.Windows.Forms.Button();
-            this.btGuiTheoGio = new System.Windows.Forms.Button();
-            this.txtTimeGuiXe = new System.Windows.Forms.TextBox();
-            this.btNgayGui = new System.Windows.Forms.Button();
-            this.btGioGui = new System.Windows.Forms.Button();
             this.btXeMay = new System.Windows.Forms.Button();
             this.btOto = new System.Windows.Forms.Button();
             this.btXeDap = new System.Windows.Forms.Button();
@@ -55,6 +49,17 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.Month = new System.Windows.Forms.CheckBox();
+            this.btGuiTheoThang = new System.Windows.Forms.Button();
+            this.btGuiTheoNgay = new System.Windows.Forms.Button();
+            this.btGuiTheoGio = new System.Windows.Forms.Button();
+            this.Day = new System.Windows.Forms.CheckBox();
+            this.Hour = new System.Windows.Forms.CheckBox();
+            this.Oto = new System.Windows.Forms.CheckBox();
+            this.XeMay = new System.Windows.Forms.CheckBox();
+            this.XeDap = new System.Windows.Forms.CheckBox();
+            this.DTPNgayGui = new System.Windows.Forms.DateTimePicker();
+            this.DTPGioGui = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNguoiGui)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBienSoXe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +76,7 @@
             this.pictureBoxNguoiGui.Size = new System.Drawing.Size(437, 371);
             this.pictureBoxNguoiGui.TabIndex = 6;
             this.pictureBoxNguoiGui.TabStop = false;
+            this.pictureBoxNguoiGui.Click += new System.EventHandler(this.pictureBoxNguoiGui_Click);
             // 
             // btKhuVuc
             // 
@@ -98,6 +104,7 @@
             this.btMoiXeVao.TabIndex = 9;
             this.btMoiXeVao.Text = "Mời xe vào";
             this.btMoiXeVao.UseVisualStyleBackColor = false;
+            this.btMoiXeVao.Click += new System.EventHandler(this.btMoiXeVao_Click);
             // 
             // pictureBoxBienSoXe
             // 
@@ -107,82 +114,7 @@
             this.pictureBoxBienSoXe.Size = new System.Drawing.Size(437, 371);
             this.pictureBoxBienSoXe.TabIndex = 12;
             this.pictureBoxBienSoXe.TabStop = false;
-            // 
-            // btGuiTheoThang
-            // 
-            this.btGuiTheoThang.BackColor = System.Drawing.Color.Orange;
-            this.btGuiTheoThang.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGuiTheoThang.ForeColor = System.Drawing.Color.Snow;
-            this.btGuiTheoThang.Location = new System.Drawing.Point(1058, 508);
-            this.btGuiTheoThang.Name = "btGuiTheoThang";
-            this.btGuiTheoThang.Size = new System.Drawing.Size(176, 76);
-            this.btGuiTheoThang.TabIndex = 18;
-            this.btGuiTheoThang.Text = "Theo tháng";
-            this.btGuiTheoThang.UseVisualStyleBackColor = false;
-            // 
-            // btGuiTheoNgay
-            // 
-            this.btGuiTheoNgay.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btGuiTheoNgay.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGuiTheoNgay.ForeColor = System.Drawing.Color.Snow;
-            this.btGuiTheoNgay.Location = new System.Drawing.Point(1058, 593);
-            this.btGuiTheoNgay.Name = "btGuiTheoNgay";
-            this.btGuiTheoNgay.Size = new System.Drawing.Size(176, 76);
-            this.btGuiTheoNgay.TabIndex = 19;
-            this.btGuiTheoNgay.Text = "Theo ngày";
-            this.btGuiTheoNgay.UseVisualStyleBackColor = false;
-            // 
-            // btGuiTheoGio
-            // 
-            this.btGuiTheoGio.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btGuiTheoGio.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGuiTheoGio.ForeColor = System.Drawing.Color.Snow;
-            this.btGuiTheoGio.Location = new System.Drawing.Point(1058, 675);
-            this.btGuiTheoGio.Name = "btGuiTheoGio";
-            this.btGuiTheoGio.Size = new System.Drawing.Size(176, 76);
-            this.btGuiTheoGio.TabIndex = 20;
-            this.btGuiTheoGio.Text = "Lấy liền";
-            this.btGuiTheoGio.UseVisualStyleBackColor = false;
-            // 
-            // txtTimeGuiXe
-            // 
-            this.txtTimeGuiXe.BackColor = System.Drawing.Color.White;
-            this.txtTimeGuiXe.Enabled = false;
-            this.txtTimeGuiXe.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimeGuiXe.Location = new System.Drawing.Point(1058, 788);
-            this.txtTimeGuiXe.Multiline = true;
-            this.txtTimeGuiXe.Name = "txtTimeGuiXe";
-            this.txtTimeGuiXe.Size = new System.Drawing.Size(176, 45);
-            this.txtTimeGuiXe.TabIndex = 53;
-            this.txtTimeGuiXe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btNgayGui
-            // 
-            this.btNgayGui.BackColor = System.Drawing.Color.CadetBlue;
-            this.btNgayGui.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btNgayGui.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btNgayGui.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btNgayGui.ForeColor = System.Drawing.Color.Snow;
-            this.btNgayGui.Location = new System.Drawing.Point(1271, 617);
-            this.btNgayGui.Name = "btNgayGui";
-            this.btNgayGui.Size = new System.Drawing.Size(177, 52);
-            this.btNgayGui.TabIndex = 62;
-            this.btNgayGui.Text = "12/09/2019";
-            this.btNgayGui.UseVisualStyleBackColor = false;
-            // 
-            // btGioGui
-            // 
-            this.btGioGui.BackColor = System.Drawing.Color.CadetBlue;
-            this.btGioGui.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btGioGui.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btGioGui.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGioGui.ForeColor = System.Drawing.Color.Snow;
-            this.btGioGui.Location = new System.Drawing.Point(1271, 675);
-            this.btGioGui.Name = "btGioGui";
-            this.btGioGui.Size = new System.Drawing.Size(177, 52);
-            this.btGioGui.TabIndex = 63;
-            this.btGioGui.Text = "12:12:23";
-            this.btGioGui.UseVisualStyleBackColor = false;
+            this.pictureBoxBienSoXe.Click += new System.EventHandler(this.pictureBoxBienSoXe_Click);
             // 
             // btXeMay
             // 
@@ -199,6 +131,7 @@
             this.btXeMay.Text = "Xe máy";
             this.btXeMay.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btXeMay.UseVisualStyleBackColor = false;
+            this.btXeMay.Click += new System.EventHandler(this.btXeMay_Click);
             // 
             // btOto
             // 
@@ -215,6 +148,7 @@
             this.btOto.Text = "Ô tô";
             this.btOto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btOto.UseVisualStyleBackColor = false;
+            this.btOto.Click += new System.EventHandler(this.btOto_Click);
             // 
             // btXeDap
             // 
@@ -231,6 +165,7 @@
             this.btXeDap.Text = "Xe đạp";
             this.btXeDap.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btXeDap.UseVisualStyleBackColor = false;
+            this.btXeDap.Click += new System.EventHandler(this.btXeDap_Click);
             // 
             // label3
             // 
@@ -379,11 +314,141 @@
             this.pictureBox4.TabIndex = 79;
             this.pictureBox4.TabStop = false;
             // 
+            // Month
+            // 
+            this.Month.AutoSize = true;
+            this.Month.Location = new System.Drawing.Point(1025, 501);
+            this.Month.Name = "Month";
+            this.Month.Size = new System.Drawing.Size(56, 17);
+            this.Month.TabIndex = 80;
+            this.Month.Text = "Month";
+            this.Month.UseVisualStyleBackColor = true;
+            this.Month.Visible = false;
+            // 
+            // btGuiTheoThang
+            // 
+            this.btGuiTheoThang.BackColor = System.Drawing.Color.Orange;
+            this.btGuiTheoThang.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGuiTheoThang.ForeColor = System.Drawing.Color.Snow;
+            this.btGuiTheoThang.Location = new System.Drawing.Point(1050, 480);
+            this.btGuiTheoThang.Name = "btGuiTheoThang";
+            this.btGuiTheoThang.Size = new System.Drawing.Size(176, 55);
+            this.btGuiTheoThang.TabIndex = 18;
+            this.btGuiTheoThang.Text = "Theo tháng";
+            this.btGuiTheoThang.UseVisualStyleBackColor = false;
+            this.btGuiTheoThang.Click += new System.EventHandler(this.btGuiTheoThang_Click);
+            // 
+            // btGuiTheoNgay
+            // 
+            this.btGuiTheoNgay.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btGuiTheoNgay.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGuiTheoNgay.ForeColor = System.Drawing.Color.Snow;
+            this.btGuiTheoNgay.Location = new System.Drawing.Point(1050, 541);
+            this.btGuiTheoNgay.Name = "btGuiTheoNgay";
+            this.btGuiTheoNgay.Size = new System.Drawing.Size(176, 55);
+            this.btGuiTheoNgay.TabIndex = 19;
+            this.btGuiTheoNgay.Text = "Theo ngày";
+            this.btGuiTheoNgay.UseVisualStyleBackColor = false;
+            this.btGuiTheoNgay.Click += new System.EventHandler(this.btGuiTheoNgay_Click);
+            // 
+            // btGuiTheoGio
+            // 
+            this.btGuiTheoGio.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btGuiTheoGio.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGuiTheoGio.ForeColor = System.Drawing.Color.Snow;
+            this.btGuiTheoGio.Location = new System.Drawing.Point(1050, 602);
+            this.btGuiTheoGio.Name = "btGuiTheoGio";
+            this.btGuiTheoGio.Size = new System.Drawing.Size(176, 55);
+            this.btGuiTheoGio.TabIndex = 20;
+            this.btGuiTheoGio.Text = "Lấy liền";
+            this.btGuiTheoGio.UseVisualStyleBackColor = false;
+            this.btGuiTheoGio.Click += new System.EventHandler(this.btGuiTheoGio_Click);
+            // 
+            // Day
+            // 
+            this.Day.AutoSize = true;
+            this.Day.Location = new System.Drawing.Point(1025, 557);
+            this.Day.Name = "Day";
+            this.Day.Size = new System.Drawing.Size(45, 17);
+            this.Day.TabIndex = 80;
+            this.Day.Text = "Day";
+            this.Day.UseVisualStyleBackColor = true;
+            this.Day.Visible = false;
+            // 
+            // Hour
+            // 
+            this.Hour.AutoSize = true;
+            this.Hour.Location = new System.Drawing.Point(1025, 617);
+            this.Hour.Name = "Hour";
+            this.Hour.Size = new System.Drawing.Size(49, 17);
+            this.Hour.TabIndex = 80;
+            this.Hour.Text = "Hour";
+            this.Hour.UseVisualStyleBackColor = true;
+            this.Hour.Visible = false;
+            // 
+            // Oto
+            // 
+            this.Oto.AutoSize = true;
+            this.Oto.Location = new System.Drawing.Point(322, 84);
+            this.Oto.Name = "Oto";
+            this.Oto.Size = new System.Drawing.Size(43, 17);
+            this.Oto.TabIndex = 80;
+            this.Oto.Text = "Oto";
+            this.Oto.UseVisualStyleBackColor = true;
+            this.Oto.Visible = false;
+            // 
+            // XeMay
+            // 
+            this.XeMay.AutoSize = true;
+            this.XeMay.Location = new System.Drawing.Point(715, 81);
+            this.XeMay.Name = "XeMay";
+            this.XeMay.Size = new System.Drawing.Size(59, 17);
+            this.XeMay.TabIndex = 80;
+            this.XeMay.Text = "XeMay";
+            this.XeMay.UseVisualStyleBackColor = true;
+            this.XeMay.Visible = false;
+            // 
+            // XeDap
+            // 
+            this.XeDap.AutoSize = true;
+            this.XeDap.Location = new System.Drawing.Point(1239, 81);
+            this.XeDap.Name = "XeDap";
+            this.XeDap.Size = new System.Drawing.Size(59, 17);
+            this.XeDap.TabIndex = 80;
+            this.XeDap.Text = "XeDap";
+            this.XeDap.UseVisualStyleBackColor = true;
+            this.XeDap.Visible = false;
+            // 
+            // DTPNgayGui
+            // 
+            this.DTPNgayGui.CustomFormat = "";
+            this.DTPNgayGui.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DTPNgayGui.Location = new System.Drawing.Point(1276, 622);
+            this.DTPNgayGui.Name = "DTPNgayGui";
+            this.DTPNgayGui.Size = new System.Drawing.Size(149, 20);
+            this.DTPNgayGui.TabIndex = 82;
+            // 
+            // DTPGioGui
+            // 
+            this.DTPGioGui.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.DTPGioGui.Location = new System.Drawing.Point(1276, 672);
+            this.DTPGioGui.Name = "DTPGioGui";
+            this.DTPGioGui.Size = new System.Drawing.Size(149, 20);
+            this.DTPGioGui.TabIndex = 83;
+            // 
             // GiaoDienQuanLiXeUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Controls.Add(this.DTPGioGui);
+            this.Controls.Add(this.DTPNgayGui);
+            this.Controls.Add(this.Hour);
+            this.Controls.Add(this.Day);
+            this.Controls.Add(this.XeDap);
+            this.Controls.Add(this.XeMay);
+            this.Controls.Add(this.Oto);
+            this.Controls.Add(this.Month);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -393,9 +458,6 @@
             this.Controls.Add(this.txtOtoTrong);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btGioGui);
-            this.Controls.Add(this.btNgayGui);
-            this.Controls.Add(this.txtTimeGuiXe);
             this.Controls.Add(this.btGuiTheoGio);
             this.Controls.Add(this.btGuiTheoNgay);
             this.Controls.Add(this.btGuiTheoThang);
@@ -427,15 +489,8 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBoxNguoiGui;
-        private System.Windows.Forms.Button btKhuVuc;
         private System.Windows.Forms.Button btMoiXeVao;
         private System.Windows.Forms.PictureBox pictureBoxBienSoXe;
-        private System.Windows.Forms.Button btGuiTheoThang;
-        private System.Windows.Forms.Button btGuiTheoNgay;
-        private System.Windows.Forms.Button btGuiTheoGio;
-        private System.Windows.Forms.TextBox txtTimeGuiXe;
-        private System.Windows.Forms.Button btNgayGui;
-        private System.Windows.Forms.Button btGioGui;
         private System.Windows.Forms.Button btXeMay;
         private System.Windows.Forms.Button btOto;
         private System.Windows.Forms.Button btXeDap;
@@ -452,5 +507,17 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.CheckBox Month;
+        private System.Windows.Forms.Button btGuiTheoThang;
+        private System.Windows.Forms.Button btGuiTheoNgay;
+        private System.Windows.Forms.Button btGuiTheoGio;
+        public System.Windows.Forms.CheckBox Day;
+        public System.Windows.Forms.CheckBox Hour;
+        public System.Windows.Forms.Button btKhuVuc;
+        public System.Windows.Forms.CheckBox Oto;
+        public System.Windows.Forms.CheckBox XeMay;
+        public System.Windows.Forms.CheckBox XeDap;
+        private System.Windows.Forms.DateTimePicker DTPNgayGui;
+        private System.Windows.Forms.DateTimePicker DTPGioGui;
     }
 }

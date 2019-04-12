@@ -263,7 +263,7 @@
             // 
             // pictureBoxXeMay
             // 
-            this.pictureBoxXeMay.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBoxXeMay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxXeMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxXeMay.BackgroundImage")));
             this.pictureBoxXeMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxXeMay.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -275,7 +275,7 @@
             // 
             // pictureBoxOto
             // 
-            this.pictureBoxOto.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBoxOto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxOto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxOto.BackgroundImage")));
             this.pictureBoxOto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxOto.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -288,7 +288,7 @@
             // 
             // pictureBoxXeDap
             // 
-            this.pictureBoxXeDap.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBoxXeDap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxXeDap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxXeDap.BackgroundImage")));
             this.pictureBoxXeDap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxXeDap.Cursor = System.Windows.Forms.Cursors.Hand;
